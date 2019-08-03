@@ -9,7 +9,7 @@ class FirstScreen extends StatelessWidget{
     return Material(color: Colors.lightBlueAccent,
         child:Center(
           child: Text(
-          "Your Luckey Number for today is ${generateLuckyNumber()} ",
+         luckeyNumber(),
           textDirection:TextDirection.ltr
           ),
         ),
@@ -20,6 +20,11 @@ class FirstScreen extends StatelessWidget{
     var random = Random();
     int luckeyNumber = random.nextInt(10);
     return luckeyNumber;
+  }
+   String luckeyNumber (){
+    var random = Random();
+    int luckeyNumber = random.nextInt(10);
+    return "Your Luckey Number is $luckeyNumber";
   }
 
 }

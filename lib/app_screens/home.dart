@@ -30,11 +30,5 @@ class Home extends StatelessWidget{
         ),
     ),
  );
-    
-    
-    
-    
-    
   }
-  
 }
